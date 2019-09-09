@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
     var answer = Int.random(in: 1...100)
+    var maxnumber = 100
+    var minnumber = 1
+    
 
     @IBOutlet weak var messageLabel: UILabel!
     
@@ -25,15 +28,20 @@ class ViewController: UIViewController {
         let inputNumber = Int(inputText)
         if inputNumber == nil{
             //no input
-            print("no input")
+           messageLabel.text = "值为空，请输入数字1～100"
             
         }else{
-            if inputNumber! > 100{
-                print("Too large")
-            }else if inputNumber! < 1{
-                print("Too small")
-            }else{
-                print("check answer")
+            if inputNumber! > maxnumber{
+                messageLabel.text = "值太大，大于\(maxnumber)请输入数字1～100"
+            }else if inputNumber! < minnumber{
+               messageLabel.text = "值太小,小于\(minnumber)请输入数字1～100"
+            }else
+            {
+                if inputNumber! == answer {
+                    messageLabel.text = "你回答正确"
+                }else{
+                    messageLabel.text = "回答错误，再试一次"
+                }
             }
         }
         
