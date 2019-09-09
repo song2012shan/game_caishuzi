@@ -18,48 +18,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's the number?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAb-YP-ied">
-                                <rect key="frame" x="0.0" y="93" width="375" height="61"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新年发财运 抽签" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAb-YP-ied">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="195"/>
+                                <color key="backgroundColor" red="0.96137756109237671" green="0.026475761085748672" blue="0.41643154621124268" alpha="0.6641160102739726" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.4251289963722229" green="0.63554954528808594" blue="0.46367377042770386" alpha="0.6641160102739726" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="61" id="POC-rc-Cbk"/>
+                                    <constraint firstAttribute="height" constant="195" id="POC-rc-Cbk"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="37"/>
+                                <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <color key="highlightedColor" red="0.64799952507019043" green="0.70283132791519165" blue="0.61171215772628784" alpha="0.6641160102739726" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess a number Between 1-100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5H1-YO-tyC">
-                                <rect key="frame" x="0.0" y="170" width="375" height="20"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="输入你的幸运数字0-100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5H1-YO-tyC">
+                                <rect key="frame" x="0.0" y="194" width="375" height="133"/>
+                                <color key="backgroundColor" red="0.89212328767123283" green="0.43772720553698641" blue="0.41564105308219179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I0c-AJ-1Bd">
-                                <rect key="frame" x="131" y="243" width="97" height="30"/>
+                                <rect key="frame" x="0.0" y="326" width="375" height="200"/>
+                                <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="YSO-4D-ydk"/>
+                                </constraints>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="101"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fyw-LO-oug">
-                                <rect key="frame" x="161" y="296" width="43" height="30"/>
-                                <state key="normal" title="Guess"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fyw-LO-oug">
+                                <rect key="frame" x="136" y="577" width="104" height="87"/>
+                                <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="tintColor" white="0.67000000000000004" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Guess">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
                                 <connections>
                                     <action selector="makeAGuss:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xlS-8z-3Pw"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.44063035102739728" green="0.46915132705479451" blue="0.83566994863013699" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="I0c-AJ-1Bd" secondAttribute="trailing" id="4cs-KH-xAf"/>
                             <constraint firstAttribute="trailing" secondItem="eAb-YP-ied" secondAttribute="trailing" id="6BJ-ub-eaf"/>
                             <constraint firstItem="eAb-YP-ied" firstAttribute="leading" secondItem="5H1-YO-tyC" secondAttribute="leading" id="Dgl-VV-NDB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Fyw-LO-oug" secondAttribute="trailing" symbolic="YES" id="EQr-T9-WLK"/>
-                            <constraint firstItem="5H1-YO-tyC" firstAttribute="top" secondItem="eAb-YP-ied" secondAttribute="bottom" constant="16" id="Ln8-b6-SU1"/>
-                            <constraint firstItem="I0c-AJ-1Bd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="131" id="OzG-B0-Fh8"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Fyw-LO-oug" secondAttribute="bottom" constant="452" id="VP7-0l-EX5"/>
-                            <constraint firstItem="eAb-YP-ied" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="49" id="bpB-pf-NIk"/>
-                            <constraint firstItem="Fyw-LO-oug" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="161" id="d8o-W5-ycG"/>
+                            <constraint firstItem="I0c-AJ-1Bd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="EwD-1m-fBF"/>
+                            <constraint firstItem="5H1-YO-tyC" firstAttribute="top" secondItem="eAb-YP-ied" secondAttribute="bottom" constant="-1" id="Ln8-b6-SU1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Fyw-LO-oug" secondAttribute="bottom" constant="114" id="VP7-0l-EX5"/>
+                            <constraint firstItem="I0c-AJ-1Bd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="326" id="Ygl-r4-tTG"/>
+                            <constraint firstItem="eAb-YP-ied" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-44" id="bpB-pf-NIk"/>
+                            <constraint firstItem="Fyw-LO-oug" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="136" id="d8o-W5-ycG"/>
                             <constraint firstItem="eAb-YP-ied" firstAttribute="trailing" secondItem="5H1-YO-tyC" secondAttribute="trailing" id="fNn-Ve-kGv"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I0c-AJ-1Bd" secondAttribute="trailing" constant="147" id="j2p-Ba-vH1"/>
-                            <constraint firstItem="Fyw-LO-oug" firstAttribute="top" secondItem="I0c-AJ-1Bd" secondAttribute="bottom" constant="23" id="oih-It-aXO"/>
+                            <constraint firstItem="I0c-AJ-1Bd" firstAttribute="top" secondItem="5H1-YO-tyC" secondAttribute="bottom" constant="-1" id="rmv-Xd-lvT"/>
                             <constraint firstItem="eAb-YP-ied" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tKq-a1-MI1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
