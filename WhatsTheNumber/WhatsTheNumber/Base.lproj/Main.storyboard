@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WhatsTheNumber" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's the number?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAb-YP-ied">
+                                <rect key="frame" x="0.0" y="93" width="375" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="POC-rc-Cbk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess a number Between 1-100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5H1-YO-tyC">
+                                <rect key="frame" x="0.0" y="170" width="375" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I0c-AJ-1Bd">
+                                <rect key="frame" x="131" y="243" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fyw-LO-oug">
+                                <rect key="frame" x="161" y="296" width="43" height="30"/>
+                                <state key="normal" title="Guess"/>
+                                <connections>
+                                    <action selector="makeAGuss:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xlS-8z-3Pw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="eAb-YP-ied" secondAttribute="trailing" id="6BJ-ub-eaf"/>
+                            <constraint firstItem="eAb-YP-ied" firstAttribute="leading" secondItem="5H1-YO-tyC" secondAttribute="leading" id="Dgl-VV-NDB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Fyw-LO-oug" secondAttribute="trailing" symbolic="YES" id="EQr-T9-WLK"/>
+                            <constraint firstItem="5H1-YO-tyC" firstAttribute="top" secondItem="eAb-YP-ied" secondAttribute="bottom" constant="16" id="Ln8-b6-SU1"/>
+                            <constraint firstItem="I0c-AJ-1Bd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="131" id="OzG-B0-Fh8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Fyw-LO-oug" secondAttribute="bottom" constant="452" id="VP7-0l-EX5"/>
+                            <constraint firstItem="eAb-YP-ied" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="49" id="bpB-pf-NIk"/>
+                            <constraint firstItem="Fyw-LO-oug" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="161" id="d8o-W5-ycG"/>
+                            <constraint firstItem="eAb-YP-ied" firstAttribute="trailing" secondItem="5H1-YO-tyC" secondAttribute="trailing" id="fNn-Ve-kGv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I0c-AJ-1Bd" secondAttribute="trailing" constant="147" id="j2p-Ba-vH1"/>
+                            <constraint firstItem="Fyw-LO-oug" firstAttribute="top" secondItem="I0c-AJ-1Bd" secondAttribute="bottom" constant="23" id="oih-It-aXO"/>
+                            <constraint firstItem="eAb-YP-ied" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tKq-a1-MI1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="inputTextField" destination="I0c-AJ-1Bd" id="loX-nh-cin"/>
+                        <outlet property="messageLabel" destination="5H1-YO-tyC" id="E97-xS-5gk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.40000000000001" y="135.96059113300493"/>
+        </scene>
+    </scenes>
+</document>
